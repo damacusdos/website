@@ -48,7 +48,7 @@ function makeFormObj({ email, hutk }: { email: string; hutk: string }) {
   return data;
 }
 
-const BlogNewsletter = () => {
+const Newsletter = () => {
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const emailRef = useRef() as React.MutableRefObject<HTMLInputElement>;
@@ -107,6 +107,7 @@ const BlogNewsletter = () => {
                 },
               }}
               color="secondary.dark"
+              bgColor="white"
               _placeholder={{ color: "#9B8FA0" }}
               required
               ref={emailRef}
@@ -129,4 +130,4 @@ const BlogNewsletter = () => {
   );
 };
 
-export default BlogNewsletter;
+export default Newsletter;
